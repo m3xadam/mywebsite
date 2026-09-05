@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+P{
+    font-weight: 80%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(240, 240, 240);
+}
+.cover{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: max-content;
+    border-radius: 20px;
+    background-color: rgb(248, 248, 248);
+    width: min(95%,1100px);
+    min-height: 90vh;
+    padding: 2rem;
+    gap: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+.profile_icon{
+    display: flex;
+    background: rgb(224, 224, 224);
+    grid-column: 1;
+    grid-row: 1;
+    overflow: hidden;
+    min-height: 250px;
+    border-radius: 10px;
+    padding: .25rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: #050816;
+    overflow: hidden;
+}
+.icons{
+    background: rgb(224, 224, 224);
+    border-radius: 10px;
+}
+h1{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.1rem;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    justify-content: space-between;
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+}
+
+.buttons{
+    gap: 10%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    padding: .25rem.5rem;
+    justify-content: center ;
+    align-items: center;
+}
+#contact{
+     border-radius: 10px;
+     font-size: .8rem;
+     width: 150px;
+     border: none;
+     cursor: pointer;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     padding: .5rem .5rem;
+     transition: 200ms ease-in-out;
+     background: transparent;
+     border: 2px solid grey;
+}
+
+#port{
+    cursor: pointer;
+    border: none;
+    background:black;
+     border-radius: 10px;
+     font-size: .8rem;
+     width: 150px;
+     color: white;
+     padding: .5rem .5rem;
+     text-wrap: nowrap;
+     transition: 200ms ease-in-out;
+}
+#port:hover{
+    color: #050816;
+    background-color: aliceblue;
+    border: solid 2px grey;
+    
+}
+#contact:hover{
+    background: black;
+    color: white;
+}
+
+.info{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    grid-column: 1/span 3;
+    grid-row: 2/span 1;
+    border-bottom: solid 2px grey;
+}
+.skills legend{
+    text-align: center;
+    font-weight: bold;
+}
+.skills{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    grid-column: 1/span 3;
+    grid-row: 3/span 1;  
+    border: none ;
+  
+
+}
+
+.skill{
+    display: flex;
+    width: 30%;
+    height: 80%;
+    padding: .25rem .5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid grey;
+}
+.footer{
+    padding: .25rem .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    grid-column: 1/span 3;
+    grid-row: 4/span 1;
+}
+.butt{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    
+    justify-content: space-around;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #050816;
+}
+.fbtn{
+    cursor: pointer;
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    margin: .25rem .5rem;
+}
+.hr{
+     background:black;
+     color: white;
+}
+.dl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid grey;
+    background: transparent;
+}
+.sidepanel{
+    border: solid 2px grey;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: .5rem;
+}
+
+.panels{
+    gap: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1px;
+}
+.text h2{
+    font-size: 1rem;
+}
+
+.text p{
+    font-size: .8rem;
+}
+
+.icons{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-code{
+    font-size: 2rem;
+}
+.fa-user{
+    font-size: 2rem;
+}
+.fa-star{
+    font-size: 2rem;
+}
+.fa-location-dot{
+    font-size: 1.5rem;
+}
+
+.fa-envelope{
+    font-size: 1.5rem;
+}
+
+.fa-phone{
+    font-size: 1.5rem;
+}
+
+.fa-html5{
+    font-size: 2rem;
+}
+.fa-css3-alt{
+    font-size: 2rem;
+}
+.fa-js{
+    font-size: 2rem;
+}
+
+.fa-js{
+    font-size: 2rem;
+}
+.fa-desktop{
+    font-size: 2rem;
+}
+.fa-github-alt{
+    font-size: 2rem;
+}
+.fa-briefcase{
+    font-size: 1.1rem;
+}
+.fa-message{
+    font-size: 1.1rem;
+}
+@media (max-width:600px){
+    .body{
+        padding: 10px;
+        align-items: flex-start;
+    }
+    .cover{
+        width: 100%;
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+    .profile_icon{
+        grid-column: 1;
+        grid-row: 1;
+        width: 80%;
+    }
+    .texts{
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+    }
+    .texts .buttons{
+        margin-top: 20px;
+    }
+    .sidepanel{
+        border: none;
+        padding: 1rem;
+        gap: 20px;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .info{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        grid-column: 1;
+        padding: 1.5rem;
+        grid-row: 4;
+    }
+    .skill{
+        padding: .25rem .5rem;
+        font-size: .9rem;
+    }
+
+    .skills{
+        width: 80%;
+        grid-column: 1;
+        grid-row: 5;
+        gap: 15px;
+       display: flex;
+       flex-direction: column;
+       padding: .5rem;
+       align-items: flex-start;
+    }
+
+    .skills legend{
+
+        text-align: start;
+    }
+    .socials ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .butt{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .fbtn{
+        width: 100%;
+        height: 50px;
+    }
+    .footer{
+        width: 80%;
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column;
+        display: flex;
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is the portfolio page section */
